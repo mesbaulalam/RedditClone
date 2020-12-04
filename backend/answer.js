@@ -32,16 +32,16 @@ async function answerDelete(req, res) {
 }
 
 async function answerNew(req, res) {
-  aid = "aid" + num;
+  var x = uuidv4();
   await Answer.create({
-    _id: uuidv4(),
+    _id: x,
     qid: req.body.qid,
     content: req.body.content,
     uid: req.body.uid,
     uname: req.body.uname,
     time: req.body.time,
   });
-  await Question.updateOne({ _id: req.body.qid }, { $push: { answer: aid } });
+  await Question.updateOne({ _id: req.body.qid }, { $push: { answer: x } });
   Answer.find({ qid: req.body.qid })
     .sort({ time: -1 })
     .exec((err, result) => {

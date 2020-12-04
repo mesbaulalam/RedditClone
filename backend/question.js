@@ -29,7 +29,11 @@ async function questionAsk(req, res) {
       creatorid: req.body.creatorid,
       creatorName: req.body.creatorName,
     });
-    res.status(200).send("Question added!");
+    Question.find({})
+      .sort({ time: -1 })
+      .exec((err, result) => {
+        res.send(result);
+      });
   } catch (error) {
     console.log(error);
     res.status(500).send("Error adding question");

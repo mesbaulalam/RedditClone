@@ -5,7 +5,7 @@ const answerSchema = new mongoose.Schema({
   qid: { type: String, required: true },
   content: { type: String, required: true },
   uid: { type: String, required: true },
-  uname: { type: mongoose.ObjectId, required: true },
+  uname: { type: String, required: true },
   time: { type: String, required: true },
 });
 
