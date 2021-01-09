@@ -1,10 +1,7 @@
-Version numbers of all technologies used in building the project:
-
-    "react": "^17.0.1",
-    "express": "^4.17.1",
-    "nodeJS": "10.13.0",
-    "jquery": "^3.5.1",
-    "MongoDB": "v4.4.1"
+![MongoDB](https://img.shields.io/badge/MongoDB-4.4.1-fcba03)
+![Express](https://img.shields.io/badge/Express-^4.17.1-green)
+![React](https://img.shields.io/badge/React-^17.0.1-blueviolet)
+![NodeJS](https://img.shields.io/badge/NodeJS-10.13.0-red)
 
 ## Using the database:
 
