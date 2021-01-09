@@ -1,0 +1,138 @@
+//DISCLAIMER: ALL the _id fields have been filled up with the express library uuid.
+
+****QUESTIONS****
+
+db.questions.insert([
+  {
+    "_id":"7153eccf-3fd7-4d0a-bc06-a569312d8088",
+    "answer":[
+        
+    ],
+    "up":[
+      "1c1daa8d-f629-4f57-87d9-331bdbf55414"
+    ],
+    "space":"JavaScript",
+    "title":"JavaScript or TypeScript?",
+    "content":"I cannot understand the difference between JavaScript and TypeScript. Please Explain.",
+    "time":"2020-10-10",
+    "creatorid":"10b82c6b-3511-42e2-8ec7-93ab2caf9b1d",
+    "creatorName":"Mesbaul Alam Khan",
+  },
+  {
+    "_id":"c95cc1b8-3845-4e4a-8359-de06d1d66d24",
+    "answer":[
+      
+    ],
+    "up":[
+      "10b82c6b-3511-42e2-8ec7-93ab2caf9b1d",
+      "1c1daa8d-f629-4f57-87d9-331bdbf55414"
+    ],
+    "space":"JavaScript",
+    "title":"Which Framework is the best?",
+    "content":"Should I use React or should I go for Angular/Vue?",
+    "time":"2020-11-10",
+    "creatorid":"10b82c6b-3511-42e2-8ec7-93ab2caf9b1d",
+    "creatorName":"Mesbaul Alam Khan",
+  },
+  {
+    "_id":"1f878abb-eb8d-444e-903f-17fb7f2209af",
+    "answer":[
+      "e99a65f1-ad8b-4bb2-8752-2744ac5ad944"
+    ],
+    "up":[
+      
+    ],
+    "space":"JavaScript",
+    "title":"Which backend is the most profiecient?",
+    "content":"Nodejs/Express or any other server side technologies?",
+    "time":"2020-12-05",
+    "creatorid":"10b82c6b-3511-42e2-8ec7-93ab2caf9b1d",
+    "creatorName":"Mesbaul Alam Khan"
+  },
+  {
+    "_id":"e710bb99-cbc9-42ad-8755-34e57c5a18eb",
+    "answer":[
+      "cbe1b66a-c21b-4032-8b2e-d4da175bddde"
+    ],
+    "up":[
+      "1c1daa8d-f629-4f57-87d9-331bdbf55414"
+    ],
+    "space":"Algorithm",
+    "title":"Djikstra's Algorithm",
+    "content":"Can somebody explain me this?",
+    "time":"2020-12-04",
+    "creatorid":"1c1daa8d-f629-4f57-87d9-331bdbf55414",
+    "creatorName":"Sahrin"
+ },
+ {
+    "_id":"13664814-fde2-4126-acb5-a02216dd89cf",
+    "answer":[
+      
+    ],
+    "up":[
+      
+    ],
+    "space":"Machine Learning",
+    "title":"How to Learn Machine Learning?",
+    "content":"This is a test problem in the field of Machine Learning.",
+    "time":"2020-12-05",
+    "creatorid":"1c1daa8d-f629-4f57-87d9-331bdbf55414",
+    "creatorName":"Sahrin"
+  },
+  {
+    "_id":"d8023e27-c68f-48fe-962e-4492629cbca7",
+    "answer":[
+      
+    ],
+    "up":[
+      
+    ],
+    "space":"System",
+    "title":"Mac or Windows?",
+    "content":"Do programmers prefer to use Mac OS or windows for coding and why ?\nGenuinely curious cause I’ve heard that Mac is better for that sort of work. If you’re a programmer, would you buy a MacBook or a Windows laptop? Which OS is better for Python, R and data science, Mac or Windows? Macs are usually more expensive than Windows PCs, we can’t all afford to buy one, I feel like the price is too high for the system and hardware you get, I spent less money for similar-more performance. You typically get much more hardware for your money when you buy a Windows-based computer. One of the best things about Windows devices at the moment is that they offer such variety to users as you can see with Dell XPS 15. The cheapest MacBook Pro 15-inch is more expensive than the second-from-top-end Dell XPS 15, which is slightly more powerful than its Apple-made rival.",
+    "time":"2020-12-05",
+    "creatorid":"10b82c6b-3511-42e2-8ec7-93ab2caf9b1d",
+    "creatorName":"Mesbaul Alam Khan"
+  }
+])
+
+****ANSWERS****
+
+db.answers.insert([
+  {
+    "_id":"e99a65f1-ad8b-4bb2-8752-2744ac5ad944",
+    "qid":"1f878abb-eb8d-444e-903f-17fb7f2209af",
+    "content":"Can someone answer?",
+    "uid":"10b82c6b-3511-42e2-8ec7-93ab2caf9b1d",
+    "uname":"Mesbaul Alam Khan",
+    "time":"2020-12-05"
+  },
+  {
+    "_id":"cbe1b66a-c21b-4032-8b2e-d4da175bddde",
+    "qid":"e710bb99-cbc9-42ad-8755-34e57c5a18eb",
+    "content":"Please Google",
+    "uid":"10b82c6b-3511-42e2-8ec7-93ab2caf9b1d",
+    "uname":"Mesbaul Alam Khan",
+    "time":"2020-12-05"
+  }
+])
+
+
+//DISCLAIMER: At the backend, the user password is hashed using bcrypt library on registration. Hence, the password here is formatted very unusually. The original password is just "a", which has been encrypted. Hence, I would suggest to change password to something simpler in this text file before injecting into mongoDB. In order to observe the bcrypt encryption, you can use the frontend to register a new user, and check his/her password on the mongo terminal to see the encrypted one.
+
+****USERS****
+
+db.users.insert([
+  {
+    "_id":"10b82c6b-3511-42e2-8ec7-93ab2caf9b1d",
+    "name":"Mesbaul Alam Khan",
+    "email":"mesbaul.a.khan@gmail.com",
+    "password":"$2b$10$.eQoIaNTCGkKna.Q7rc/H.6Q6lVWN52lPpghP5npu4sXjEOzmCFAy"
+  },
+  {
+    "_id":"1c1daa8d-f629-4f57-87d9-331bdbf55414",
+    "name":"Sahrin",
+    "email":"sahrin@ou.com",
+    "password":"$2b$10$.hovoJZs4iNxICBXX8e9AelQX96R.EayZS9aQA0nQ4C.dqjTbZn2m"
+  }
+])
