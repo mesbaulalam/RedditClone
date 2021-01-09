@@ -6,7 +6,7 @@ Version numbers of all technologies used in building the project:
     "jquery": "^3.5.1",
     "MongoDB": "v4.4.1"
 
-Starting and using the database:
+## Using the database:
 
 I have included the data/db folder in the root directory, so 
 
@@ -20,17 +20,15 @@ If you want to query and add new data, open a new terminal and run the following
 
 You can then view all the collections and respective documents
 
-Running the backend:
+## Running the backend:
 
 1) Go to root directory
 2) cd backend
 3) node server.js (Port 8000)
 
-Running the frontend:
+## Running the frontend:
 
 1) Go to root directory
 2) cd frontend
 3) cd my-app
 3) npm install (Port 3000)
-
-I believe I have completed the entire project according to requirements. For the styling, I followed the ui provided by the project spec. The only difference is I placed the 4 topics at the top. My implementations are responsive however, and fits all devices.
