@@ -1,0 +1,89 @@
+.back {
+  color: blue;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.questionCard{
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.detailFlex1{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.detailFlex1Item{
+  color: blue;
+}
+
+.detailFlex1Item span {
+  margin-left: 10px;
+  margin-right: 10px;
+    cursor: pointer;
+
+}
+
+.detailTopic{
+  border: 2px solid blue;
+  border-radius: 10%;
+  padding: 5px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.nameDateFlex{
+  display: flex;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.upvoteDetail {
+  margin-bottom: 10px;
+}
+
+.detailName{
+  color: blue;
+  margin-right: 20px;
+}
+
+.detailHeader{
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.detailContent{
+  margin-top: 10px;
+}
+
+.dummyTextbox {
+  color: lightslategray;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.submitAnswer{
+  margin-top: 30px;
+  display: flex;
+}
+
+.submit {
+  margin-left: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.cancel {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 350px) {
+  .nameDateFlex {
+    flex-direction: column;
+  }
+
+}

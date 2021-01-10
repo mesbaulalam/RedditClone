@@ -1,0 +1,42 @@
+.header {
+  color: blue;
+  font-style: italic;
+  margin: 20px;
+  font-weight: bolder;
+  cursor: pointer;
+  font-size: 2em;
+}
+
+.navFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.search {
+  width: 30%;
+}
+
+.headerItem {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.auth {
+  display: flex;
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 650px) {
+  .auth {
+    margin-left: 0px;
+    padding-bottom: 20px;
+}
+
+}

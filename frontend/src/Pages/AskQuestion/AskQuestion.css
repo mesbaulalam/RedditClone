@@ -1,0 +1,59 @@
+.askQuestionContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.askQuestionBox {
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.askQuestionHeader {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.space{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.radioContainer {
+  float: left;
+  clear: none;
+  margin-bottom: 10px;
+}
+
+.radioContainer label {
+  float: left;
+  clear: none;
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+input[type=radio],
+input.radio {
+  float: left;
+  clear: none;
+  margin: 2px 0 0 2px;
+}
+
+
+textarea{
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.submitQuestion {
+  border: 2px solid blue;
+  background-color: transparent;
+  border-radius: 10%;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}

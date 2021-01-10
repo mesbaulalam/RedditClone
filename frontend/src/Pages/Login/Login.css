@@ -1,0 +1,56 @@
+.authContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.authHeader {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.authBox {
+  background-color: lightblue;
+  padding: 50px;
+  padding-bottom: 20px;
+  margin-right: 10%;
+  margin-left: 10%;
+  flex-shrink: 1;
+}
+
+.loginBox {
+  background-color: lightcyan;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  flex-shrink: 1;
+}
+
+input {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.submitButton {
+  border: 2px solid blue;
+  background-color: transparent;
+  border-radius: 10%;
+}
+
+.register {
+  border: 2px solid blue;
+  background-color: transparent;
+  border-radius: 10%;
+}
+
+.registerBox {
+  text-align: center;
+}

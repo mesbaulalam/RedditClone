@@ -1,0 +1,104 @@
+.questionContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.questionTopic{
+  border: 2px solid blue;
+  border-radius: 10%;
+  padding: 5px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.questionName{
+  background-color:  lightblue;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 30px;
+}
+
+.questionCard {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  -webkit-box-shadow: 6px 6px 0px -1px rgba(207,207,207,1);
+  -moz-box-shadow: 6px 6px 0px -1px rgba(207,207,207,1);
+  box-shadow: 6px 6px 0px -1px rgba(207,207,207,1);
+  margin-bottom: 20px;
+}
+
+.question2 {
+  display: flex;
+  align-items: flex-start;
+}
+
+.questionInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.question{
+  display: flex;
+  flex-direction: column;
+}
+
+.questionHeader{
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.questionContentOverFlow {
+  margin-top: 30px;
+  line-height: 20px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical; 
+}
+
+.questionContent {
+   margin-top: 30px;
+   line-height: 1.2em;
+   height: 3.6em;
+   overflow: hidden;
+}
+
+.questionContent.collapsed{
+  overflow: hidden;
+}
+
+.questionContent.expanded{
+  overflow: visible;
+  height: auto;
+}
+
+.date {
+  color: lightslategray;
+  margin-right: 10px;
+}
+
+.upvote {
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.answer {
+  cursor: pointer;
+}
+
+.footer{
+  display: flex;
+  align-items: flex-end;
+}
+
+@media only screen and (max-width: 350px) {
+  .question2 {
+    flex-direction: column;
+  }
+
+}
