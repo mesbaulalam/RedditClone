@@ -10,7 +10,7 @@ export default function NavBar(props) {
     var questions = [...props.question].sort(function (a, b) {
       return b.up.length - a.up.length;
     });
-    props.hot === false ? props.toggleHot(true) : "";
+    props.hot === false && props.toggleHot(true);
     props.setQuestion(questions);
   }
 
@@ -18,7 +18,7 @@ export default function NavBar(props) {
     var questions = [...props.question].sort(function (a, b) {
       return Date.parse(b.time) - Date.parse(a.time);
     });
-    props.hot === true ? props.toggleHot(false) : "";
+    props.hot === true && props.toggleHot(false);
     props.setQuestion(questions);
   }
 
